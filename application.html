@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Application Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+  <div class="logo"></div> <!-- Add a div for the logo -->
+  <div class="container">
+    <h1>Course Application Form</h1>
+    <form action="/submit_application.php" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="course">Select Course:</label>
+      <select id="course" name="course" required>
+        <option value="">Select Course</option>
+        <option value="iga+Academy">iga+Academy</option>
+        <option value="IreroKickSTART">IreroKickSTART</option>
+        <option value="Ihuriro">Ihuriro</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <label for="message">Message (Optional):</label>
+      <textarea id="message" name="message"></textarea>
+
+      <input type="submit" value="Submit Application">
+    </form>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="aims">
+          <h3>Our Aims</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+        <div class="helpful-links">
+          <h3>Helpful Links</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <!-- Add more links as needed -->
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>123 Street Name, City, Country</p>
+          <p>Email: info@example.com</p>
+          <p>Phone: +1234567890</p>
+        </div>
+        <div class="social-media">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <!-- Add more social media icons as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
