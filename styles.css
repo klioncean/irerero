@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #00AEEF;
+  color:#2c2e2f;;
   
 }
 
@@ -107,30 +108,25 @@ footer {
   width: 100%;
 }
 
-.about,
-.practice {
+.about {
   padding: 50px 0;
 
 }
 
-.about h2,
-.practice h2 {
+.about h2 {
   margin-bottom: 20px;
   margin-top: 100px; 
 }
 
-.about p,
-.practice p {
+.about p {
   margin-bottom: 10px;
 }
 
-.about ul,
-.practice ul {
+.about ul{
   list-style: none;
 }
 
-.about ul li,
-.practice ul li {
+.about ul li {
   margin-bottom: 5px;
   
 }
@@ -146,7 +142,7 @@ footer {
   background-color: #f0f0f0;
   padding: 100px 0;
   text-align: center;
-  border-bottom-left-radius: 10px;
+
 }
 
 .mission h2 {
