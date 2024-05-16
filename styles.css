@@ -9,9 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #00AEEF;
-  color:#2c2e2f;;
-  
+  color: #422e07;
 }
 
 .container {
@@ -20,12 +18,11 @@ body {
   padding: 0 20px;
 }
 
-
 span {
   font-family: "Microsoft Yi Baiti Regular";
   font-size: 43px;
   cursor: pointer;
-  display: none; 
+  display: none;
 }
 
 header nav ul {
@@ -34,7 +31,7 @@ header nav ul {
 
 header nav ul li {
   display: inline;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 header nav ul li a {
@@ -44,7 +41,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color:  #00AEEF; 
+  color: #00AEEF;
 }
 
 @media only screen and (max-width: 767px) {
@@ -65,7 +62,9 @@ header nav ul li a:hover {
   background-color: #f0f0f0;
   padding: 100px 0;
   text-align: center;
-  margin-top: 100px; 
+  margin-top: 100px;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
 }
 
 .hero h2 {
@@ -74,8 +73,8 @@ header nav ul li a:hover {
 
 .btn {
   display: inline-block;
-  background-color: #fff;
-  color: #00AEEF;
+  background-color: #1b75bc;
+  color: #fff;
   padding: 10px 20px;
   margin-top: 10px;
   border-radius: 5px;
@@ -83,13 +82,13 @@ header nav ul li a:hover {
 }
 
 .btn:hover {
-  background-color: #1B75BC;
+  background-color: #00AEEF;
   transition: 0.8s;
 }
 
 .courses {
   padding: 50px 0;
-  margin-top: 100px; 
+  margin-top: 100px;
 }
 
 .course {
@@ -98,6 +97,14 @@ header nav ul li a:hover {
 
 .course img {
   max-width: 100%;
+}
+
+.course-header {
+  color: #ff4500;
+}
+
+.course .course-heading {
+  color: #ffa800;
 }
 
 footer {
@@ -110,25 +117,23 @@ footer {
 
 .about {
   padding: 50px 0;
-
 }
 
 .about h2 {
   margin-bottom: 20px;
-  margin-top: 100px; 
+  margin-top: 100px;
 }
 
 .about p {
   margin-bottom: 10px;
 }
 
-.about ul{
+.about ul {
   list-style: none;
 }
 
 .about ul li {
   margin-bottom: 5px;
-  
 }
 
 .mission {
@@ -142,11 +147,10 @@ footer {
   background-color: #f0f0f0;
   padding: 100px 0;
   text-align: center;
-
 }
 
 .mission h2 {
-  color: #1B75BC;
+  color: #1b75bc;
   margin-bottom: 20px;
 }
 
@@ -157,7 +161,7 @@ footer {
 }
 
 .team h2 {
-  color: #1B75BC;
+  color: #1b75bc;
   margin-bottom: 20px;
 }
 
@@ -168,11 +172,11 @@ footer {
 .team-member img {
   border-radius: 50%;
   max-width: 150px;
-  border: 5px solid #1B75BC;
+  border: 5px solid #1b75bc;
 }
 
 .team-member h3 {
-  color: #1B75BC;
+  color: #1b75bc;
   margin-top: 20px;
 }
 
@@ -180,26 +184,15 @@ footer {
   color: #808080;
 }
 
-.contact {
-  background-color: #f0f0f0;
-  padding: 100px 0;
-  text-align: center;
-}
-
 .contact h2 {
-  color: #1B75BC;
+  color: #1b75bc;
   margin-bottom: 20px;
-  margin-top: 100px; 
+  margin-top: 100px;
 }
-
 
 form {
   max-width: 600px;
   margin: 0 auto;
-}
-
-form,
-h1 {
   margin-top: 30px;
 }
 
@@ -226,7 +219,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #1B75BC;
+  background-color: #1b75bc;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -239,7 +232,6 @@ input[type="submit"]:hover {
   background-color: #0d4a75;
 }
 
-
 /* Footer Styles */
 footer {
   background-color: #000000;
@@ -249,10 +241,17 @@ footer {
   font-size: 12px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.information {
+  margin: 120px;
+  padding: 20px 50px;
+  display: flex;
+  color: #1b75bc;
+  font-size: 24px;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  border-radius: 60px;
+  box-shadow: 0px 0px 122px;
+  opacity: 60%;
 }
 
 .footer-content {
@@ -348,7 +347,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #1B75BC;
+  background-color: #1b75bc;
   color: #fff;
   padding: 20px 0;
   padding-bottom: 20px;
@@ -357,4 +356,21 @@ header {
   z-index: 1000; /* Ensure the header appears above other content */
 }
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@media only screen and (max-width: 767px) {
+  .information {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    flex-direction: column;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+  }
+
+  .social-media,
+  .helpful-links,
+  .contact-info {
+    margin-bottom: 20px;
+  }
+}
