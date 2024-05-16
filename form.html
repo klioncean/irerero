@@ -3,81 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Course Enrollment Form</title>
-  <link rel="stylesheet" href="style.css">
-  <style type="text/css">
-    body {
-      font-family: "Microsoft Yi Baiti Bold", Futura, Arial, sans-serif;
-      margin: 2rem;
-      background-color: #f0f0f0;
-    }
+  <title>Enrollment Form</title>
+  <!-- iRERERO icon -->
+  <link rel="shortcut icon" href="Favicon-01.svg" type="image/svg+xml">
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px; /* Add space between cards */
-    }
-
-    .column {
-      flex: 1;
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background-color: #fff;
-    }
-
-    h1, h2 {
-      text-align: center;
-      color: #1B75BC;
-    }
-
-    .form-group {
-      margin-bottom: 1rem;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 0.5rem;
-      color: #1B75BC;
-      font-weight: bold;
-    }
-
-    input, select {
-      width: calc(100% - 12px); /* Adjusted width */
-      padding: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    button {
-      background-color: #00AEEF;
-      color: white;
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      width: 100%;
-      margin-top: 1rem;
-    }
-
-    button:hover {
-      background-color: #007BBF;
-    }
-
-    .error-message {
-      color: red;
-    }
-
-    .hidden {
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" href="form.css">
 </head>
 <body>
   <div class="container">
     <div class="column left">
       <h2>Why Choose Us?</h2>
-      <ul>
+      <hr>
+      <ul class="styled-list">
         <li>Community engaging</li>
         <li>Unity and Empowerment</li>
         <li>Experienced Instructors</li>
@@ -88,6 +25,7 @@
     </div>
     <div class="column center">
       <h1>iR's community</h1>
+      <hr>
       <form id="course-form">
         <div class="form-group">
           <label for="name">Name:</label>
@@ -118,15 +56,25 @@
     </div>
     <div class="column right">
       <h2>Benefits of Choosing Us</h2>
-      <p>Building trust is essential for us. Here's how we ensure a reliable learning experience:</p>
+      <hr>
+      <p>Building trust is essential for us.<br> 
+        Here's how we ensure a reliable learning<br> experience:</p>
       <ul>
         <li>Positive Student Reviews</li>
         <li>Secure Payment Processing</li>
         <li>Clear Refund Policy</li>
         <li>Excellent Customer Support</li>
       </ul>
+      <div class="circle"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+
     </div>
   </div>
+  <div class="bg-image">
+    <img src="Black_Icon.png" alt="" class="image">
+  </div>
+  <p class="information">Start small, Think Big ! solve Problem.</p>
   <script src="script.js"></script>
 </body>
 </html>

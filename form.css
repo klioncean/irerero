@@ -1,0 +1,168 @@
+body {
+    font-family: "Microsoft Yi Baiti Bold", Futura, Arial, sans-serif;
+    margin: 2rem;
+    background-color: #f0f0f0;
+  }
+
+  
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between cards */
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .column {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+
+  h1, h2 {
+    text-align: center;
+    color: #1B75BC;
+  }
+  p{
+    font-size: 13px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    border-radius: 50px;
+  }
+  li{
+    color: #231f20;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #1B75BC;
+    font-weight: bold;
+  }
+
+  input, select {
+    width: calc(100% - 12px); /* Adjusted width */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: #00AEEF;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  button:hover {
+    background-color: #007BBF;
+  }
+
+  .error-message {
+    color: red;
+  }
+
+  .hidden {
+    display: none;
+  }
+.right, .left{
+  color:#007BBF;
+}
+.circle {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color:#ff4500;
+border: 5px solid #ff4500;
+background-color: transparent; 
+}
+.circle2 {
+width: 50px;
+height: 50px;
+margin-left: 200px;
+border-radius: 50%;
+background-color: #1B75BC;
+}
+.circle3 {
+width: 50px;
+height: 50px;
+margin-left: 300px;
+border-radius: 50%;
+background-color:#ffa800;
+}
+.image{
+margin-top: 30px;
+width: 90px;
+height: 90px;
+opacity: 80%;
+display: absolute;
+margin-left: 45rem;
+}
+
+/* Styles for styled list */
+.styled-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+  }
+
+  .styled-list li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    cursor: pointer; /* Make list items look clickable */
+  }
+
+  /* Apply different background colors and text colors for each list item */
+  .styled-list li:nth-child(1) {
+    background-color: #f0f8ff;
+    color: #333;
+  }
+
+  .styled-list li:nth-child(2) {
+    background-color: #f7f0f8;
+    color: #777;
+  }
+
+  .styled-list li:nth-child(3) {
+    background-color: #fff8f0;
+    color: #999;
+  }
+
+  .styled-list li:nth-child(4) {
+    background-color: #f7eff5;
+    color: #fa7014;
+  }
+  .styled-list li:nth-child(5) {
+    background-color: #dcf3fa;
+    color: #2ca6f7;
+  }
+  .styled-list li:nth-child(6) {
+    background-color: #e6e6e6;
+    color: #007BBF;
+  }
+  @media only screen and (max-width: 768px) {
+/* Styles for screens less than 768px wide */
+.container {
+  flex-direction: column; /* Stack elements vertically on small screens */
+}
+.column {
+  flex: 1 100%; /* Make columns take full width on small screens */
+}
+.image {
+  margin-left: 0; /* Center image on small screens */
+}
+}
