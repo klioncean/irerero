@@ -253,7 +253,11 @@ footer {
   box-shadow: 0px 0px 122px;
   opacity: 60%;
 }
-
+.information:hover{
+  background-color: #00AEEF ;
+  color: #ffffff;
+  transition: 1s;
+}
 .footer-content {
   display: flex;
   align-items: center;
