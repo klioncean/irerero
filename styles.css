@@ -44,6 +44,20 @@ header nav ul li a:hover {
   color: #00AEEF;
 }
 
+#language-selector {
+  padding: 5px;
+  font-size: 16px;
+  margin-top: -30px;
+  margin-left: 70rem;
+  position: absolute;
+  border: none;
+  color: #ffffff;
+  background-color: #1b75bc;
+  width: auto;
+  outline: none;
+}
+
+
 @media only screen and (max-width: 767px) {
   span {
     display: block;
@@ -608,7 +622,7 @@ header {
   .information,  .circle,
   .circle2,
   .circle3,
-  .circle4 {
+  .circle4,#language-selector {
     margin: 20px;
     padding: 10px 20px;
     font-size: 18px;
@@ -624,7 +638,7 @@ header {
   .circle4,
   .social-media,
   .helpful-links,
-  .contact-info {
+  .contact-info,#language-selector {
     margin-bottom: 20px;
   }
 }

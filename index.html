@@ -15,25 +15,32 @@
 
   <header>
     <div class="container">
-      <h1><span class="line-icon">≡</span><a style="text-decoration: none; color: #ffff;" href="index.html">iRERERO</a> </h1>
+      <h1><span class="line-icon">≡</span><a style="text-decoration: none; color: #fff;" href="index.html">iRERERO</a></h1>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#about">About us</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" data-translate-key="home">Home</a></li>
+          <li><a href="#courses" data-translate-key="courses">Courses</a></li>
+          <li><a href="#about" data-translate-key="about">About us</a></li>
+          <li><a href="#contact" data-translate-key="contact">Contact</a></li>
         </ul>
+        <div class="language-selector">
+          <select id="language-selector" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="rw">Kinyarwanda</option>
+          </select>
+        </div>
       </nav>
     </div>
   </header>
 
   <section id="home" class="content-section">
-    <div class="container">      
+    <div class="container">
       <section class="hero">
         <div class="container">
-          <h2 class="welcome-word">A community space for  you!!</h2>
-          <p>Happiness is the only way! Have you ever felt that?</p>
-          <a href="form.html" target="_blank" class="btn">Get Started</a>
+          <h2 class="welcome-word" data-translate-key="welcome">A community space for you!!</h2>
+          <p data-translate-key="happiness">Happiness is the only way! Have you ever felt that?</p>
+          <a href="form.html" target="_blank" class="btn" data-translate-key="getStarted">Get Started</a>
         </div>
       </section>
     </div>
@@ -186,16 +193,16 @@
           <h3>Helpful Links</h3>
           <ul>
             <li><a href="#">iR's Fellowership</a></li>
-            <li><a href="#">Humanity</a></li>
-            <li><a href="#">Community engagiment</a></li>
+            <li><a href="#">Community</a></li>
             <li><a href="#">Digitalizing</a></li>
+            <li><a href="#">Humanity</a></li>
           </ul>
         </div>
         <div class="helpful-links">
           <h3>Privacy and terms</h3>
           <ul>
             <li><a href="guidelines.html">iR's Community guidelines</a></li>
-            <li><a href="#">Terms</a></li>
+            <li><a href="terms.html">Terms</a></li>
             <li><a href="#">Privacy</a></li>
             <li><a href="#">Your rights</a></li>
           </ul>
@@ -218,5 +225,6 @@
   
 
   <script src="script.js"></script>
+  <script src="languagemode.js"></script>
 </body>
 </html>
