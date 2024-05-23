@@ -18,10 +18,10 @@
       <h1><span class="line-icon">≡</span><a style="text-decoration: none; color: #fff;" href="index.html">iRERERO</a></h1>
       <nav>
         <ul>
-          <li><a href="#home" data-translate-key="home">Home</a></li>
-          <li><a href="#courses" data-translate-key="courses">Courses</a></li>
-          <li><a href="#about" data-translate-key="about">About us</a></li>
-          <li><a href="#contact" data-translate-key="contact">Contact</a></li>
+          <li><a href="#home" id="home-menu" data-translate-key="home">Home</a></li>
+          <li><a href="#courses" id="courses-menu" data-translate-key="courses">Courses</a></li>
+          <li><a href="#about" id="about-menu" data-translate-key="about">About us</a></li>
+          <li><a href="#contact" id="contact-menu" data-translate-key="contact">Contact</a></li>
         </ul>
         <div class="language-selector">
           <select id="language-selector" onchange="changeLanguage()">
@@ -129,6 +129,7 @@
           </div>
       </div>
   </section>
+</section>
 <section id="why-choose-us" class="content-section">
   <div class="container">
       <div class="why-choose-us">
@@ -163,7 +164,7 @@
     
   
     </div>
-  </section>
+  
   
 
 
@@ -226,5 +227,63 @@
 
   <script src="script.js"></script>
   <script src="languagemode.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuItems = document.querySelectorAll('header nav ul li a');
+      const sections = document.querySelectorAll('section');
+  
+      // Function to set active menu item
+      function setActiveMenuItem(id) {
+        menuItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('id') === id) {
+            item.classList.add('active');
+            // Store the active menu item in local storage
+            localStorage.setItem('activeMenuItem', id);
+          }
+        });
+      }
+  
+      // Function to get the current section in view
+      function getCurrentSection() {
+        let currentSection = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 60) { // Adjust offset as necessary
+            currentSection = section.getAttribute('id');
+          }
+        });
+        return currentSection;
+      }
+  
+      // Retrieve the active menu item from local storage
+      const savedActiveMenuItem = localStorage.getItem('activeMenuItem');
+      if (savedActiveMenuItem) {
+        setActiveMenuItem(savedActiveMenuItem);
+      } else {
+        // Set "Home" as the default active menu item
+        setActiveMenuItem('home-menu');
+      }
+  
+      // Update active menu item on scroll
+      window.addEventListener('scroll', () => {
+        const currentSection = getCurrentSection();
+        if (currentSection) {
+          const activeMenuItem = `${currentSection}-menu`;
+          setActiveMenuItem(activeMenuItem);
+        }
+      });
+  
+      // Update active menu item on click
+      menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+          setActiveMenuItem(item.getAttribute('id'));
+        });
+      });
+    });
+  </script>
+  
+  
 </body>
 </html>
