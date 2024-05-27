@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-size: 14px;
   color: #422e07;
 }
 
@@ -221,6 +222,77 @@ header nav ul li a:hover {
 .btn:hover {
   background-color: #0056b3;
 }
+
+
+/* join us section */
+#join-us {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#join-us h3 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+.join-ustitle{
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#join-us p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+#join-us ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+#join-us ul li {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+#join-us .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1b75bc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#join-us .btn:hover {
+  background-color: #00AEEF;
+}
+
+.graphics-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  flex-wrap: wrap; /* This allows the items to wrap if the screen is too small */
+}
+
+.graphic {
+  flex: 1;
+  max-width: 30%;
+  padding: 10px;
+}
+
+.graphic img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 /* end courses */
 
